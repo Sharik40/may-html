@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            font-family: Inter;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        section {
+            color: #FFF;
+
+        }
+        header {
+            background-color:#8D8484;
+            height: 22vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer {
+            background-color:#BDBDBD;
+            height: 22vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 56vh;
+        }
+        .left {
+            height: 56vh;
+            width: 73vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .right {
+            height: 56vh;
+            width: 27vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .left-up {
+            height: 19vh;
+            width: 73vw;
+            background-color: #776969;
+        }
+        .left-central {
+            height: 19vh;
+            width: 73vw;
+            background-color: #643030;
+        }
+        .left-down {
+            height: 18vh;
+            width: 73vw;
+            background-color: #441818;
+        }
+        .right-up {
+            height: 27vh;
+            width: 100%;
+            background-color: #937575;
+        }
+        .right-down {
+            height: 29vh;
+            width: 100%;
+            background-color: #644C4C;
+        }
+        .marg {
+            margin-left: 25vw;
+            margin-top: 7vh;
+        }
+
+        .marg-right-up{
+            margin-top: 12vh;
+            margin-left: 8vw;
+        }
+        .marg-right-down{
+            margin-top: 13vh;
+            margin-left: 8vw;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Header</p>
+    </header>
+    <div class="main">
+        <div class="left">
+            <section class="left-up">
+                <p class="marg">Content - 1</p>
+            </section>
+            <section class="left-central">
+                <p class="marg">Content - 2</p>
+            </section>
+            <section class="left-down">
+                <p class="marg">Content - 3</p>
+            </section>
+        </div>
+        <div class="right">
+            <section class="right-up">
+                <p class="marg-right-up">spam -1</p>
+            </section>
+            <section class="right-down">
+                <p class="marg-right-down">spam -1</p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>
