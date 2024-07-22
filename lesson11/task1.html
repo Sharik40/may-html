@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .loader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .loader img {
+            width: 50px;
+            height: 50px;
+            margin: auto auto;
+            animation: loader 3s linear infinite;
+        }
+
+        @keyframes loader {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<span class="loader">
+    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/loading-sign.png" alt="loading-sign"/>
+</span>
+</body>
+</html>
