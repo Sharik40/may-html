@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            height: 13vh;
+        }
+        header img {
+            width: 106px;
+            height: 39px;
+        }
+        header ul {
+            margin: 46px 29vw 46px;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        header ul a {
+            text-decoration: none;
+            color: #000;
+            font-family: Roboto, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .price a {
+            text-decoration: none;
+            color: #000;
+            font-family: Roboto, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        .price {
+            margin: 37px 0;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+        .img img {
+            width: 581px;
+            height: 653px;
+            margin-right: 44px;
+        }
+        .main {
+            height: 87vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FBF6F3;
+        }
+        .img {
+            width: 50vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .second {
+            width: 50vw;
+            display: flex;
+            justify-content: flex-start;
+
+            flex-direction: column;
+        }
+        h2, h3 {
+            color: #000;
+            -webkit-text-stroke-width: 0.5;
+            -webkit-text-stroke-color: #000;
+            font-family: Roboto, sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        h3 {
+            color: #AD0306;
+            font-size: 36px;
+            margin-top: 37px;
+        }
+
+        .gray a{
+            color: #A19FA0;
+            -webkit-text-stroke-width: 0.20000000298023224;
+            -webkit-text-stroke-color: #A19FA0;
+        }
+
+        p {
+            color: #000;
+            -webkit-text-stroke-width: 0.10000000149011612;
+            -webkit-text-stroke-color: #000;
+            font-family: Roboto, sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .second-page {
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        .CTA {
+            width: 472px;
+            height: 116px;
+            margin: 212px auto 0 auto;
+            color: #142823;
+            text-align: center;
+            font-family: Inter, sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .cards {
+            margin-top: 67px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            gap: 128px;
+        }
+
+        .card {
+            height: 331px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+
+        .name {
+            color: var(--Neutral--50, #282828);
+            text-align: center;
+            font-family: Inter, sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .price {
+            color: var(--Primary-600, #106FDF);
+            font-family: Inter, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .rated {
+            width: 165px;
+            height: 60px;
+            border-radius: 30px;
+            position: absolute;
+            top: -60px;
+            background: url("src/rated.png");
+        }
+
+        .rated:hover {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <ul>
+        <li>
+            <img src="src/nike.svg" alt="img">
+        </li>
+        <li>
+            <a href="#">NEW</a>
+        </li>
+        <li>
+            <a href="#">MAN</a>
+        </li>
+        <li>
+            <a href="#">WOMEN</a>
+        </li>
+    </ul>
+</header>
+<div class="main">
+    <div class="img">
+        <img src="src/snkrs.svg" alt="img">
+    </div>
+    <div class="second">
+        <h2>Nike Rs-x Toys -</h2>
+        <h2>Woman Shoes</h2>
+        <h3>$169.00</h3>
+        <ul class="price">
+            <li><a href="#">US 7</a></li>
+            <li class="gray"><a href="#">US 8</a></li>
+            <li><a href="#">US 9</a></li>
+            <li><a href="#">US 10</a></li>
+            <li class="gray"><a href="#">US 11</a></li>
+            <li><a href="#">US 12</a></li>
+        </ul>
+        <p>For orders above $150 standard shipping</p>
+        <p>is always free!</p>
+    </div>
+</div>
+<section class="second-page">
+    <p class="CTA">Showing CTAs
+        on hover interaction</p>
+    <div class="cards">
+        <div class="card">
+            <div class="rated"></div>
+            <img src="src/yellow_snks.png" alt="qq">
+            <p class="name">Nike Running - Neon</p>
+            <p class="price">$ 210.00</p>
+        </div>
+        <div class="card">
+
+            <img src="src/blue_snks.png" alt="qq">
+            <p class="name">Nike - Zegama 2</p>
+            <p class="price" style="color: #DD152D">$ 230.00</p>
+        </div>
+        <div class="card">
+            <div class="rated"></div>
+            <img src="src/white_snks.png" alt="qq">
+            <p class="name">Nike - Vaporfly 3</p>
+            <p class="price">$ 210.00</p>
+            <div class="rated"></div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
