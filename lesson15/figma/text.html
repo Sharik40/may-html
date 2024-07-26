@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    h2 {
+      color: #000;
+      /* Title/3 strong */
+      font-family: Inter, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 120%; /* 28.8px */
+
+    }
+
+    p {
+      color: rgba(60, 60, 67, 0.85);
+      /* Text/2 regular */
+      font-family: Inter, sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 140%; /* 25.2px */
+    }
+    .box {
+      margin: auto;
+      width: 1180px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 64px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 558px;
+      height: 145px;
+    }
+
+    @media screen and (min-width: 480px) and  (max-width: 1280px){
+      .box {
+        row-gap: 24px;
+        column-gap: 48px;
+          width: 768px;
+      }
+
+      .card {
+        width: 348px;
+        height: 224px;
+      }
+    }
+
+    @media screen and (min-width: 0px) and  (max-width: 480px) {
+        .box {
+            gap: 32px;
+            width: 375px;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .card {
+            width: 343px;
+            height: 144px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="card">
+      <h2>What integrations do you support?</h2>
+      <p>We can support platforms integrated with Checkout, Billing, and Invoicing. We can’t support PaymentIntent users but if you’re a platform interested in building your own UI forмone‑off payments, we’d love to hear from you!</p>
+    </div>
+    <div class="card">
+      <h2>Can I withdraw my money anytime?</h2>
+      <p>Yes, Stripe allows you to opt for a payout whenever you want. You can also opt for a scheduled payout every month.</p>
+    </div>
+    <div class="card">
+      <h2>What is the waiting period for my first payout?</h2>
+      <p>Pellentesque neque in vitae turpis dapibus diam duis amet. Arcu augue blandit auctor auctor varius dui consectetur. Ac mattis dapibus volutpat, pulvinar eget sed sit nisi.</p>
+    </div>
+    <div class="card">
+      <h2>Do you support PO box addresses?</h2>
+      <p>In general, PO Boxes aren’t part of our US address database. If the address for a PO Box or other address can’t be found in the address database, the location is approximated using the rest of the address details, such as the postal code.</p>
+    </div>
+  </div>
+</body>
+</html>

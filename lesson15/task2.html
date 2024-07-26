@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      font-size: 16px;
+      color: gray;
+    }
+    .main {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .A {
+      height: 30%;
+      background: #c3c3c3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .BF {
+      width: 100%;
+      height: 70%;
+
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+    }
+
+    .F {
+      width: 30%;
+      background: #c3c3c3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .BCDE {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .B {
+      width: 100%;
+      height: 50%;
+      background: #c3c3c3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .CDE {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+    }
+
+    .card {
+      width: 33%;
+      background: #c3c3c3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 480px) {
+      * {
+        font-size: 1.1em;
+      }
+      .BF {
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .BCDE {
+        width: 100%;
+      }
+      .A {
+        height: 20vh;
+      }
+      .B {
+        width: 100%;
+        height: 60vh;
+      }
+
+      .F {
+        width: 100%;
+        height: 20vh;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="A">A</div>
+  <div class="BF">
+    <div class="BCDE">
+      <div class="B">B</div>
+      <div class="CDE">
+        <div class="card">C</div>
+        <div class="card">D</div>
+        <div class="card">E</div>
+      </div>
+    </div>
+    <div class="F">F</div>
+  </div>
+</div>
+</body>
+</html>
