@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+        section:nth-child(1) {
+            grid-area: section1;
+        }
+        section:nth-child(2) {
+            grid-area: section2;
+        }
+        section:nth-child(3) {
+            grid-area: section3;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        header, main, section, aside {
+            border: 1px solid;
+            background: #A4A4A4;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .grid {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+        'header header header header'
+        'main main main aside'
+        'section3 section2 section1 aside';
+        }
+
+        @media screen and (min-width: 0px) and  (max-width: 480px) {
+            .grid {
+                grid-template-rows: 1fr 2fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+        'header header header'
+        'main main main'
+        'section3 section2 section1'
+        'aside aside aside';
+            }
+        }
+    </style>
+</head>
+<div class="grid">
+    <header><span>A</span></header>
+    <main><span>B</span></main>
+    <section><span>C</span></section>
+    <section><span>D</span></section>
+    <section><span>E</span></section>
+    <aside><span>F</span></aside>
+</div>
+</html>
