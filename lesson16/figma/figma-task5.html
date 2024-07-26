@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .grid {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas:
+            'header header header header header'
+            'asd1 main1 asd2 main2 asd3'
+            'footer footer footer footer footer'
+        ;
+        }
+        header {
+            grid-area: header;
+        }
+        .main1 {
+            grid-area: main1;
+        }
+
+        .main2 {
+            grid-area: main2;
+        }
+
+        .asd1 {
+            grid-area: asd1;
+        }
+
+        .asd2 {
+            grid-area: asd2;
+        }
+
+        .asd3 {
+            grid-area: asd3;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        header, footer {
+            background: #D9D9D9;
+        }
+
+        aside {
+            background: #A4A4A4;
+        }
+
+        main {
+            background: #CAC7C7;
+        }
+
+        @media screen and (max-width: 480px) {
+            .grid {
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+            'header header'
+            'main1 asd1'
+            'asd2 main2'
+            'asd3 asd3'
+            'footer footer'
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="grid">
+    <header></header>
+    <aside class="asd1"></aside>
+    <aside class="asd2"></aside>
+    <aside class="asd3"></aside>
+    <main class="main1"></main>
+    <main class="main2"></main>
+    <footer></footer>
+</div>
+</body>
+</html>

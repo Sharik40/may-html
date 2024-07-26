@@ -9,50 +9,66 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-
         .grid {
             display: grid;
             height: 100vh;
-            grid-template-rows: 1fr 3fr 1fr;
-            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-template-areas:
-                'header header header'
-                'aside2 main aside1'
-                'section section section';
+            'header header'
+            'main main'
+            'aside section'
+            'footer footer'
+        ;
         }
 
         header {
             grid-area: header;
-            background: #D9D9D9;
         }
         main {
             grid-area: main;
             background: #A4A4A4;
         }
-        .asd1 {
-            grid-area: aside1;
-            background: #C0BDBD;
+
+        aside {
+            grid-area: aside;
+            background: #C8C5C5;
         }
-       .asd2 {
-            grid-area: aside2;
-            background: #C0BDBD;
+
+        footer {
+            grid-area: footer;
         }
+
         section {
             grid-area: section;
+            background: #9F9B9B;
+        }
+        header, footer {
             background: #D9D9D9;
         }
 
+        @media screen and (max-width: 480px) {
+            .grid {
+                grid-template-rows: repeat(5, 1fr);
+                grid-template-columns: 1fr;
+                grid-template-areas:
+            'header'
+            'main'
+            'aside'
+            'section'
+            'footer'
+            }
+        }
     </style>
 </head>
 <body>
 <div class="grid">
     <header></header>
-    <aside class="asd1"></aside>
-    <main></main>
-    <aside class="asd2"></aside>
+    <aside></aside>
     <section></section>
+    <main></main>
+    <footer></footer>
 </div>
 </body>
 </html>

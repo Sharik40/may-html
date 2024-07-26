@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .grid {
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 2fr repeat(6, 1fr) 2fr;
+            grid-template-columns: 3fr 1fr;
+            grid-template-areas:
+            'header header'
+            'asd1 section'
+            'asd1 section'
+            'asd2 section'
+            'asd2 main'
+            'asd3 main'
+            'asd3 main'
+            'footer footer'
+
+
+
+        ;
+        }
+        header {
+            grid-area: header;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background: #8D8484;
+        }
+        main {
+            grid-area: main;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background: #937575;
+        }
+
+        .asd1 {
+            grid-area: asd1;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background: #776969;
+        }
+
+        .asd2 {
+            grid-area: asd2;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background: #643030;
+        }
+
+        .asd3 {
+            grid-area: asd3;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background: #441818;
+        }
+
+        section {
+            grid-area: section;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background: #644C4C;
+        }
+
+        footer {
+            grid-area: footer;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background: #BDBDBD;
+        }
+
+        aside, section, main p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header><p>Header</p></header>
+        <aside class="asd1"><p>Content - 1</p></aside>
+        <aside class="asd2"><p>Content - 2</p></aside>
+        <aside class="asd3"><p>Content - 3</p></aside>
+        <section><p>spam - 1</p></section>
+        <main><p>spam - 2</p></main>
+        <footer><p>footer</p></footer>
+    </div>
+</body>
+</html>
